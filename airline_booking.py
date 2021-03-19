@@ -59,8 +59,8 @@ def goToLoop():
     while True:
         print("\n\nWelcome to the Airline Reservation System.")
         print("Type 1 for Create a Booking, \nType 2 to View "
-                             "Booking \nType 3 to Delete a Booking \nType 4 "
-                             "to Exit")
+              "Booking \nType 3 to Delete a Booking \nType 4 "
+              "to Exit")
         option = askAndPrint("Please choose")
         if not validChoice(option):
             print("Not a valid choice.")
@@ -81,6 +81,7 @@ def goToLoop():
             break
 
     print("Goodbye! Have a good one")
+
 
 def validChoice(option):
     try:
