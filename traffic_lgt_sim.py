@@ -1,5 +1,5 @@
-import time
-
+#import time
+import subprocess
 red = "red"
 yellow = "yellow"
 green = "green"
@@ -22,7 +22,8 @@ while (True):
     print( f"{currentMessage} {currentDelay} seconds")
     print()
 
-    time.sleep(currentDelay)
+    #time.sleep(currentDelay)
+    subprocess.run(["sleep", str(currentDelay)])
 
     if trafficSignalIndex < 2:
         trafficSignalIndex += 1
