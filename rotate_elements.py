@@ -13,13 +13,12 @@ def rotate_list(input_list, n):
         j = j + 1
         count = count + 1
 
-
-
     return output_list
 
-input_list = [1,2,3,4,5,6]
-n = 4
-print(rotate_list(input_list,4))
+
+input_list = ["1","2","3","4","5","6"]
+n = 3
+print(rotate_list(input_list,n))
 
 
 
